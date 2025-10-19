@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif, 'Times New Roman', Times, serif;
+}
+body{
+   background-color: #F5F5F57A; 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   margin: 80px;
+   justify-items: center;
+   position: relative;
+   
+}
+.game{
+    height: 280px;
+    
+}
+.start-quiz{
+    background-image: url('./images/Rectangle\ 5.svg');
+    height: 84px;
+    width: 400px;
+    font-size: 53px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    box-shadow: 8px 8px 2px 8px  #01AB08;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: transform 0.18s ease-in-out;
+    
+}
+.start-quiz:hover{
+    transform: scale(1.2);
+    
+    
+}
+.start-quiz a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-love{
+    position: absolute;
+    font-size: 16px;
+    color: #858585;
+    bottom: -250px;
+}
+

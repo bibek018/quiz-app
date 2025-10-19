@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F6F4F0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.items h2 {
+    font-size: 32px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    margin: 20px auto;
+}
+
+.main-result {
+    margin: 50px auto;
+    max-width: 600px;
+    width: 90%;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.score-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.score-text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.percentage {
+    font-size: 48px;
+    font-weight: bold;
+    color: #01AB08;
+    margin-bottom: 10px;
+}
+
+.score-details {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #01AB08, #35BD3A);
+    border-radius: 10px;
+    width: 0%;
+    transition: width 2s ease-in-out;
+    position: relative;
+}
+
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.message {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #35BD3A;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 25px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(53, 189, 58, 0.3);
+}
+
+.footer a:hover {
+    background-color: #01AB08;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(53, 189, 58, 0.4);
+}

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F5F5F57A;
+    min-height: 100vh;
+    background-color: #CCE2C2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    height: 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+    width: auto;
+    color: #333;
+    font-weight: 600;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.sound{
+    font-size: 36px;
+    margin-right: 50px;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin: 20px 40px;
+    gap: 10px;
+
+}
+.accessibility{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1030px;
+}
+#question-number{
+    background-color: #FEC33D;
+    font-size: 20px;
+    
+    
+}
+#timer{
+    background-color: #FEC33D;
+    font-size: 20px;
+}
+.question{
+    height: 100px;
+    width: 1030px;
+    background-color:#F5F5F57A ;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(162, 121, 228);
+
+}
+.mcq{
+    background-color: #F5F5F57A;
+    height: 475px;
+    width: 1030px;
+    margin-top:20px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.choices{
+    height: 75px;
+    width:986px;
+    background-color: #F5F5F57A;
+    padding-left: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.next {
+    align-self: flex-end;
+    margin-top: 15px;
+}
+
+.next a{ 
+    color: #01AB08;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.next a:hover {
+    transform: scale(1.05);
+}
+
+.choices:hover {
+    background-color: #E8E8E8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,6 +1,8 @@
+
+
 # 🎯 Quiz App
 
-A modern, interactive **web-based quiz application** built with **HTML, CSS, and JavaScript**.  
+A modern, interactive **web-based quiz application** built with **HTML, CSS, and JavaScript**.
 Test your knowledge with timed questions and get instant, animated feedback!
 
 ---
@@ -8,74 +10,81 @@ Test your knowledge with timed questions and get instant, animated feedback!
 ## 🌟 Features
 
 ### ✨ Core Functionality
-- 🧠 **Interactive Quiz Interface** with smooth transitions  
-- 📝 **10 Multiple-Choice Questions** (HTML/CSS-based)  
-- ⏱️ **30-Second Timer** with auto-advance  
-- ✅ **Instant Feedback** (green for correct, red for wrong)  
-- 📊 **Score & Progress Tracking**  
-- 🔁 **One-click Retry**
+* 🧠 **Interactive Quiz Interface** with smooth transitions
+* 📝 **10 Multiple-Choice Questions** (HTML/CSS-based)
+* ⏱️ **30-Second Timer** with auto-advance
+* ✅ **Instant Feedback** (green for correct, red for wrong)
+* 📊 **Score & Progress Tracking**
+* 🔁 **One-click Retry**
 
 ### 🎨 User Experience
-- 📱 **Responsive Design** (mobile & desktop)  
-- 🎬 **Smooth Animations & Progress Bar**  
-- 💬 **Motivational Messages** after results  
-- 💡 **Visual Feedback** on every answer  
+* 📱 **Responsive Design** (mobile & desktop)
+* 🎬 **Smooth Animations & Progress Bar**
+* 💬 **Motivational Messages** after results
+* 💡 **Visual Feedback** on every answer
 
 ### 🔧 Technical Highlights
-- ⚙️ **State Management** for quiz flow  
-- 💾 **localStorage** for saving scores  
-- 🔍 **Clean Event Handling** & DOM updates  
-- 🚫 **Prevents multiple answers** per question  
+* ⚙️ **State Management** for quiz flow
+* 💾 **localStorage** for saving scores
+* 🔍 **Clean Event Handling** & DOM updates
+* 🚫 **Prevents multiple answers** per question
 
 ---
 
 ## 📁 Project Structure
 
-```
-
+```text
 Quiz App/
-├── index.html             # Landing page
-├── questions.html         # Quiz interface
-├── results.html           # Results display
-├── questionsrc.js         # Quiz logic
-├── resultsrc.js           # Results handling
-├── style.css              # Landing page styles
-├── questionstyle.css      # Quiz page styles
-├── resultsstyle.css       # Results page styles
-├── images/                # Assets (logo, icons)
-└── README.md              # Documentation
+├── index.html            # Landing page
+├── questions.html        # Quiz interface
+├── results.html          # Results display
+├── questionsrc.js        # Quiz logic
+├── resultsrc.js          # Results handling
+├── style.css             # Landing page styles
+├── questionstyle.css     # Quiz page styles
+├── resultsstyle.css      # Results page styles
+├── images/               # Assets (logo, icons)
+└── README.md             # Documentation
 
-````
+```
 
 ---
 
 ## 🚀 Getting Started
 
 ### 🔧 Requirements
-- Any modern web browser (Chrome, Firefox, Edge, Safari)
+
+* Any modern web browser (Chrome, Firefox, Edge, Safari)
 
 ### ⚙️ Setup
+
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/bibek018/quiz-app.git
-   cd quiz-app
-````
+```bash
+git clone [https://github.com/bibek018/quiz-app.git](https://github.com/bibek018/quiz-app.git)
+cd quiz-app
+
+```
+
 
 2. **Open the app**
+* Open `index.html` directly in your browser.
+* **OR** start a local server:
+```bash
+python -m http.server 8000
+# or
+npx serve .
 
-   * Open `index.html` directly in your browser
-   * Or start a local server:
+```
 
-     ```bash
-     python -m http.server 8000
-     # or
-     npx serve .
-     ```
+
+
+
 3. **Play the Quiz**
+* Click **Start Quiz**.
+* Answer each question within 30 seconds.
+* View your results and **retry anytime!**
 
-   * Click **Start Quiz**
-   * Answer each question within 30 seconds
-   * View your results and **retry anytime!**
+
 
 ---
 
@@ -91,12 +100,12 @@ Quiz App/
 
 ## 🛠️ Technologies Used
 
-| Technology            | Purpose               |
-| --------------------- | --------------------- |
-| **HTML5**             | Structure & layout    |
-| **CSS3**              | Styling & animations  |
+| Technology | Purpose |
+| --- | --- |
+| **HTML5** | Structure & layout |
+| **CSS3** | Styling & animations |
 | **JavaScript (ES6+)** | Logic & interactivity |
-| **localStorage**      | Score persistence     |
+| **localStorage** | Score persistence |
 
 ---
 
@@ -104,23 +113,23 @@ Quiz App/
 
 ### `questionsrc.js`
 
-* Manages questions, timer, validation, and scoring
-* Handles navigation and quiz state
+* Manages questions, timer, validation, and scoring.
+* Handles navigation and quiz state.
 
 ### `resultsrc.js`
 
-* Calculates score and percentage
-* Animates progress bar
-* Displays motivational messages
+* Calculates score and percentage.
+* Animates progress bar.
+* Displays motivational messages.
 
 ---
 
 ## 🎨 Design Highlights
 
-* 🎨 **Color Theme:** Green `#01AB08` and soft gradients
-* 🔠 **Font:** Poppins (Google Fonts)
-* 📱 **Layout:** Responsive with Flexbox
-* ✨ **UI:** Clean, minimal, and accessible
+* 🎨 **Color Theme:** Green `#01AB08` and soft gradients.
+* 🔠 **Font:** Poppins (Google Fonts).
+* 📱 **Layout:** Responsive with Flexbox.
+* ✨ **UI:** Clean, minimal, and accessible.
 
 ---
 
@@ -128,27 +137,29 @@ Quiz App/
 
 ### ➕ Add New Questions
 
+In your questions file, use this structure:
+
 ```js
 const questionsToPut = {
   question11: {
     question: 'Your new question?',
-    choice1: 'A', choice2: 'B', choice3: 'C', choice4: 'D',
+    choice1: 'A', 
+    choice2: 'B', 
+    choice3: 'C', 
+    choice4: 'D',
     answer: 'A'
   }
 };
+
 ```
 
 ### ⏱️ Change Timer
 
 ```js
-let timeLeft = 30; // Adjust time duration here
+let timeLeft = 30; // Adjust time duration here (in seconds)
+
 ```
 
-### 🎨 Update Design
-
-* Modify colors, fonts, or transitions in CSS files
-
----
 ---
 
 ## 🤝 Contributing
@@ -160,21 +171,9 @@ Contributions are welcome!
 3. **Commit & Push** your changes
 4. **Open** a Pull Request
 
-**Ideas for improvement:**
-
-* Add new categories (JS, React, etc.)
-* Difficulty levels (Easy/Medium/Hard)
-* Sound effects & explanations
-* User accounts & leaderboards
-
 ---
 
-## 👨‍💻 Author
 
-**Bibek Ojha**
-📎 [GitHub](https://github.com/bibek018)
-
----
 
 ## 📈 Future Enhancements
 
@@ -187,6 +186,7 @@ Contributions are welcome!
 
 ---
 
-**⭐ If you found this project helpful, please give it a star! ⭐**
-Made with ❤️ by **Bibek Ojha**
+**⭐ If you found this project helpful, please give it a star! ⭐** Made with ❤️ by **Bibek Ojha**
+
+
 
